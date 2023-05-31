@@ -6,12 +6,18 @@ using namespace std;
 int comparisons = 0;
 
 void bubbleSort(int arr[],int size){
-    for(int i= 0 ; i<=size;i++){
-        for(int j = 0;j<size-i +1;j++){
+    bool isSwapped = false;
+    for(int i= 1 ; i<=size;i++){
+        isSwapped = false;
+        for(int j = 0;j<size-i;j++){
             comparisons++;
             if(arr[j]>arr[j+1]){
                 swap(arr[j+1],arr[j]);
+                isSwapped = true;
             }
+        }
+        if(!isSwapped){
+            break;
         }
     }
 
