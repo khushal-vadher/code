@@ -69,7 +69,7 @@ void solve(int col, vector<vector<int>> &ans, vector<vector<int>> &board, int n)
         // cout <<"SOl add"<<endl;
         return;
     }
-    cout<<"col val :"<<col<<endl;
+    cout << "col val :" << col << endl;
 
     for (int row = 0; row < n; row++)
     {
@@ -98,11 +98,13 @@ int main()
     vector<vector<int>> ans;
     int n = 4;
     ans = solveNQueens(n);
-    for(int i = 0 ;i<ans.size();i++){
-        for(int j = 0 ; j<ans[i].size();j++){
-            cout << ans[i][j]<<" ";
+    for (int i = 0; i < ans.size(); i++)
+    {
+        for (int j = 0; j < ans[i].size(); j++)
+        {
+            cout << ans[i][j] << " ";
         }
-        cout <<endl;
+        cout << endl;
     }
 
     return 0;
