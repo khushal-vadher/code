@@ -119,6 +119,39 @@ int main() {
     for(int i =1 ; i<n;i++){
         cout <<temp[i]<<" ";
     }cout<<endl;
+
+
+
+    cout <<"Bhai ye sab kyo ...STL hena :"<<endl;
+
+    priority_queue<int> pq;
+    cout <<"max heap : "<<endl;
+
+    pq.push(52);
+    pq.push(55);
+    pq.push(58);
+    pq.push(5);
+    pq.push(556);
+
+    cout <<pq.top()<<endl;
+    pq.pop();
+    cout <<pq.top()<<endl;
+
+    cout <<"min heap : "<<endl;
+
+    priority_queue<int,vector<int>,greater<int>> minHeap;
+
+    minHeap.push(52);
+    minHeap.push(55);
+    minHeap.push(58);
+    minHeap.push(5);
+    minHeap.push(556);
+
+    cout <<minHeap.top()<<endl;
+    minHeap.pop();
+    cout <<minHeap.top()<<endl;
+
+
     
     return 0;
 }
